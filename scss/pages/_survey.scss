@@ -15,7 +15,7 @@
   height: 42rem;
   background: linear-gradient(to bottom left,
   rgba(199, 117, 92, 0.8),
-  rgba(248, 83, 33, 0.8)),url("/dist/assets/pexels-photo-462024.jpeg");
+  rgba(248, 83, 33, 0.8)),url("../assets/pexels-photo-462024.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ label{
       height: 1.8rem;
       width: 1.8em;
       background:
-      url("/dist/assets/6e633a235ea0d523078e667b9f84f15b-blue-check-mark-by-vexels.png") center /cover no-repeat;
+      url("../assets/6e633a235ea0d523078e667b9f84f15b-blue-check-mark-by-vexels.png") center /cover no-repeat;
       opacity: 0;
       transition: opacity .2s;
     }

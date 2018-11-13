@@ -11,7 +11,7 @@ body {
   box-sizing: border-box; }
   body .container-fluid {
     height: 100vh;
-    background: url("../assets/pexels-photo-574282.jpeg") center/cover no-repeat; }
+    background: url("/dist/assets/pexels-photo-574282.jpeg") center/cover no-repeat; }
   body input[type="radio"],
   body input[type="checkbox"] {
     display: none; }
