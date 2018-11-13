@@ -11,7 +11,7 @@ body {
   box-sizing: border-box; }
   body .container-fluid {
     height: 100vh;
-    background: url("/dist/assets/pexels-photo-574282.jpeg") center/cover no-repeat; }
+    background: url("../assets/pexels-photo-574282.jpeg") center/cover no-repeat; }
   body input[type="radio"],
   body input[type="checkbox"] {
     display: none; }
@@ -50,7 +50,7 @@ body {
   transform: translate(-50%, -95%);
   width: 28.8rem;
   height: 42rem;
-  background: linear-gradient(to bottom left, rgba(199, 117, 92, 0.8), rgba(248, 83, 33, 0.8)), url("/dist/assets/pexels-photo-462024.jpeg");
+  background: linear-gradient(to bottom left, rgba(199, 117, 92, 0.8), rgba(248, 83, 33, 0.8)), url("../assets/pexels-photo-462024.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@ label {
       transform: translate(-50%, -50%);
       height: 1.8rem;
       width: 1.8em;
-      background: url("/dist/assets/6e633a235ea0d523078e667b9f84f15b-blue-check-mark-by-vexels.png") center/cover no-repeat;
+      background: url("../assets/6e633a235ea0d523078e667b9f84f15b-blue-check-mark-by-vexels.png") center/cover no-repeat;
       opacity: 0;
       transition: opacity .2s; }
   label .radio-button {
