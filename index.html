@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Survey</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/css/main.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 id="title" class="primary-heading text-right"><span class="primary-heading__span">Survey Form</span></h1>
+      <p id="description" class="about">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus voluptatem omnis consequuntur.
+      </p>
+      <div class="survey-form">
+        <form id="survey-form" class="form-row">
+          <div class="col-sm-12 form-group">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required>
+            <label for="name" id="name-label">Full Name</label>
+          </div>
+          <div class="col-sm-12 form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required>
+            <label for="email" id="email-label">Email Address</label>
+          </div>
+          <div class="col- form-group">
+            <input min="0" max="100" type="number" name="number" id="number" placeholder="Number" class="form-control" required>
+            <label id="number-label" for="number">Number</label>
+          </div>
+          <div class="col- form-group">
+            <select name="dropdown" id="dropdown" class="form-control">
+              <option value="------" class="form-control">------</option>
+              <option value="Red" class="form-control">Red</option>
+              <option value="Green" class="form-control">Green</option>
+              <option value="Blue" class="form-control">Blue</option>
+              <option value="Yellow" class="form-control">Yellow</option>
+              <option value="Pink" class="form-control">Pink</option>
+            </select>
+            <label for="value">value</label>
+          </div>
+            <div class="col- form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="female">
+              <label class="form-check-label" for="inlineRadio1">
+                <span class="radio-button"></span>
+                female
+              </label>
+              <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="male">
+              <label class="form-check-label col-" for="inlineRadio2">
+                <span class="radio-button"></span>
+                male</label>
+            </div>
+            <div class="col- form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="basketball" id="basketball-check" value="basketball">
+              <label for="basketball-check">
+                <span class="checkbox"></span>
+                Basketball</label>
+              <input class="form-check-input" type="checkbox" name="football" id="football-check" value="football">
+              <label for="football-check">
+                <span class="checkbox"></span>
+                Football
+              </label>
+            </div>
+            <div class="col-sm-12 form-group">
+              <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+            <button type="submit" id="submit" class="col-sm-12 btn btn-primary">Submit</button>
+          </div>
+      </form>  
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>

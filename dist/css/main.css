@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+  body .container-fluid {
+    height: 100vh;
+    background: url("/dist/assets/pexels-photo-574282.jpeg") center/cover no-repeat; }
+  body input[type="radio"],
+  body input[type="checkbox"] {
+    display: none; }
+
+body {
+  font-family: sans-serif; }
+
+.primary-heading {
+  font-family: "Roboto Condensed",sans-serif;
+  position: absolute;
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+  top: .6rem;
+  right: .2rem;
+  font-size: 3.2rem;
+  width: 50%;
+  padding: .3rem .7rem; }
+  .primary-heading__span {
+    padding: .3rem .7rem;
+    background: linear-gradient(to right, rgba(134, 236, 240, 0.5), rgba(117, 242, 247, 0.5));
+    -webkit-box-decoration-break: clone; }
+
+.about {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  transform: translate(-5%, -10%);
+  width: 75%;
+  font-size: 1.6rem; }
+
+.survey-form {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -95%);
+  width: 28.8rem;
+  height: 42rem;
+  background: linear-gradient(to bottom left, rgba(199, 117, 92, 0.8), rgba(248, 83, 33, 0.8)), url("/dist/assets/pexels-photo-462024.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  -moz-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1.5rem 2rem; }
+
+label {
+  margin-left: .7rem;
+  margin-top: .5rem;
+  font-size: 1rem;
+  display: block;
+  transition: all .3s;
+  position: relative; }
+  label .checkbox {
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: .8rem;
+    border: solid 1px white; }
+    label .checkbox::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 1.8rem;
+      width: 1.8em;
+      background: url("/dist/assets/6e633a235ea0d523078e667b9f84f15b-blue-check-mark-by-vexels.png") center/cover no-repeat;
+      opacity: 0;
+      transition: opacity .2s; }
+  label .radio-button {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: solid 3px orange;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    top: -2.8rem;
+    left: 0; }
+    label .radio-button:after {
+      content: "";
+      display: block;
+      height: 1.2rem;
+      width: 1.2rem;
+      background: orange;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity .2s; }
+
+input[type="radio"]:checked + label .radio-button:after {
+  opacity: 1; }
+
+input[type="checkbox"]:checked + label .checkbox:after {
+  opacity: 1; }
+
+.form-control {
+  transition: all .2s; }
+  .form-control:focus {
+    outline: none;
+    border: none;
+    border-bottom: solid green .3rem;
+    -moz-box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.5); }
+  .form-control:focus:invalid {
+    border-bottom: solid orange .3rem; }
+  .form-control::-webkit-input-placeholder {
+    color: #76797c; }
+
+.form-control:placeholder-shown ~ label {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-4rem); }
+
+input[type="checkbox"] + label {
+  padding-left: 3rem; }

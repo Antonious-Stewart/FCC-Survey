@@ -1,0 +1,115 @@
+.about{
+  position: absolute;
+  top:10%;
+  left:5%;
+  transform: translate(-5%,-10%);
+  width: 75%;
+  font-size: 1.6rem;
+}
+.survey-form{
+  position: absolute;
+  top:95%;
+  left:50%;
+  transform: translate(-50%,-95%);
+  width: 28.8rem;
+  height: 42rem;
+  background: linear-gradient(to bottom left,
+  rgba(199, 117, 92, 0.8),
+  rgba(248, 83, 33, 0.8)),url("/dist/assets/pexels-photo-462024.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  @include box-shadow(0,0,1rem,rgba(0,0,0,.5));
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1.5rem 2rem;
+}
+label{
+  margin-left: .7rem;
+  margin-top: .5rem;
+  font-size: 1rem;
+  display: block;
+  transition: all .3s;
+  position: relative;
+  .checkbox{
+    position: absolute;
+    top: -1.2rem;
+    left: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius:.8rem;
+    border: solid 1px white;
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      height: 1.8rem;
+      width: 1.8em;
+      background:
+      url("/dist/assets/6e633a235ea0d523078e667b9f84f15b-blue-check-mark-by-vexels.png") center /cover no-repeat;
+      opacity: 0;
+      transition: opacity .2s;
+    }
+  }
+  .radio-button{
+    cursor: pointer;
+    height: 2.5rem;
+    width:2.5rem;
+    border: solid 3px orange;
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    top:-2.8rem;
+    left: 0;
+
+    &:after{
+      content: "";
+      display: block;
+      height: 1.2rem;
+      width: 1.2rem;
+      background: orange;
+      border-radius: 100%;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+      transition: opacity .2s;
+    }
+  }
+}
+input[type="radio"]:checked + label .radio-button:after{
+  opacity: 1;
+}
+input[type="checkbox"]:checked + label .checkbox:after{
+  opacity: 1;
+}
+.form-control{
+  transition: all .2s;
+  &:focus{
+    outline: none;
+    border: none;
+    border-bottom: solid green .3rem;
+    @include box-shadow(0,.3rem,1rem ,rgba(0,0,0,.5));
+  }
+  &:focus:invalid{
+    border-bottom: solid orange .3rem;
+  }
+  &::-webkit-input-placeholder{
+    color:#76797c;
+  }
+}
+.form-control:placeholder-shown ~ label{
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-4rem);
+}
+input[type="checkbox"] + label{
+  padding-left: 3rem;
+}
